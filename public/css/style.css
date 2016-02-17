@@ -1,4 +1,5 @@
 /* === FONT FACES === */
+
 @font-face {font-family: "Azo Sans";src: url(../fonts/AzoSans-Regular.otf);}
 @font-face {font-family: "Azo Sans Md"; src: url(../fonts/AzoSans-Medium.otf);}
 @font-face {font-family: "Azo Sans Bk";src: url(../fonts/AzoSans-Bold.otf);}
@@ -15,7 +16,7 @@ b, strong, h1, h2, h3, h4, h5, h6{font-weight: normal}
 
 /* === GENERAL === */
 
-body{font-family: "Azo Sans Lt", sans-serif; font-size: 13px; font-weight: normal; margin: 0;}
+body{font-family: "Azo Sans Lt", sans-serif; color: #747577; font-size: 13px; font-weight: normal; margin: 0;}
 a{text-decoration: none;}
 .wrapper{max-width: 1280px; width: 100%; box-sizing: border-box; padding: 0 10px; margin: 0 auto; overflow: hidden;}
 .clearfix:after, .clearfix::before {content: ""; display: table;}
@@ -23,6 +24,7 @@ a{text-decoration: none;}
 
 
 /* === HEADER === */
+
 #header{height: 183px; padding: 40px 30px; box-sizing: border-box; overflow: hidden}
 #logo{float: left}
 #top-nav{float: right}
@@ -31,7 +33,7 @@ a{text-decoration: none;}
 #top-nav li a{font-size: 19px; color: #a3bcc4}
 #top-nav li a:hover{color: #4d72ae}
 
-/* === HEADER === */
+/* === HOME SLIDER=== */
 
 .slide-item{position: relative; overflow: hidden}
 .slide-bg img{width: 100%}
@@ -41,7 +43,50 @@ a{text-decoration: none;}
 .slide-label{top: 25%; color: #FFF; width: 30%}
 .slide-title{font-size: 48px; margin: 0}
 .slide-description{font-size: 24px}
-.slide-sep{width: 25%; margin: 20px 0; height: 1px; background: #FFF;}
+.slide-sep{width: 25%; margin: 5% 0; height: 1px; background: #FFF;}
 
-.slide-link{color: #FFF; background: url("../images/layout/link-arrow.png") right center no-repeat; padding-right: 16px; font-size: 18.5px}
+.slide-link{color: #FFF; background: url("../images/layout/link-arrow.png") right center no-repeat; padding-right: 16px; font-size: 19px}
+
 #home-slide-1 .slide-img{width: 42.46031746031746%; bottom: 0; left: 30%}
+#home-slide-1 .slide-label{right:10%}
+
+
+/* === BELOW LINKS=== */
+
+#below-links{margin: 0 64px; padding: 30px; border-bottom: 1px solid #f3f6f7}
+.below-item{width: 24%; margin-right: 1%; float: left}
+.below-icon{height: 80px; text-align: center;white-space: nowrap;}
+.below-icon span{height: 100%; display: inline-block;  vertical-align: middle;}
+.below-icon img{vertical-align: middle;}
+.below-title{font-size: 19px; color: #a3bcc4; text-align: center; margin-bottom: 20px}
+.below-item a{font-size: 12px; color: #5376b1; line-height: 40px}
+
+
+/* === HOME SOCIAL=== */
+
+#home-social{clear: both; margin-top: 30px; margin-left: 90px; font-size: 14px; line-height: 22px}
+#home-social div{float: left; margin-right: 10px}
+#home-social a{display: inline-block; margin-left: 30px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

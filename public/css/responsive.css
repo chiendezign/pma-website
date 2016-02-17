@@ -1,4 +1,16 @@
 @media screen and (max-width: 1280px) {
     .slide-title{font-size: 3.6vw}
     .slide-description{font-size: 1.8vw}
+    .slide-link{font-size: 1.7vw}
+}
+
+@media screen and (max-width: 960px) {
+    #below-links{margin: 0}
+    .below-item{width: 47%; margin-left: 2%; margin-bottom: 20px}
+
+}
+
+@media screen and (max-width: 480px) {
+    #below-links{padding: 0}
+    .below-item{width: 100%; margin-left: 0}
 }
