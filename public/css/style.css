@@ -1,0 +1,47 @@
+/* === FONT FACES === */
+@font-face {font-family: "Azo Sans";src: url(../fonts/AzoSans-Regular.otf);}
+@font-face {font-family: "Azo Sans Md"; src: url(../fonts/AzoSans-Medium.otf);}
+@font-face {font-family: "Azo Sans Bk";src: url(../fonts/AzoSans-Bold.otf);}
+@font-face {font-family: "Azo Sans Lt"; src: url(../fonts/AzoSans-Light.otf);}
+@font-face {font-family: "Azo Sans Tn";src: url(../fonts/AzoSans-Thin.otf);}
+
+b, strong, h1, h2, h3, h4, h5, h6{font-weight: normal}
+
+.regular{font-family: "Azo Sans",sans-serif}
+.bold, strong{font-family: "Azo Sans Bk", sans-serif}
+.medium, b{font-family: "Azo Sans Md", sans-serif}
+.thin{font-family: "Azo Sans Tn", sans-serif}
+
+
+/* === GENERAL === */
+
+body{font-family: "Azo Sans Lt", sans-serif; font-size: 13px; font-weight: normal; margin: 0;}
+a{text-decoration: none;}
+.wrapper{max-width: 1280px; width: 100%; box-sizing: border-box; padding: 0 10px; margin: 0 auto; overflow: hidden;}
+.clearfix:after, .clearfix::before {content: ""; display: table;}
+.clearfix:after {clear: both;}
+
+
+/* === HEADER === */
+#header{height: 183px; padding: 40px 30px; box-sizing: border-box; overflow: hidden}
+#logo{float: left}
+#top-nav{float: right}
+#top-nav ul{margin: 40px 0;  padding: 0}
+#top-nav li{float: left; list-style: none; margin-left: 48px;}
+#top-nav li a{font-size: 19px; color: #a3bcc4}
+#top-nav li a:hover{color: #4d72ae}
+
+/* === HEADER === */
+
+.slide-item{position: relative; overflow: hidden}
+.slide-bg img{width: 100%}
+.slide-img,.slide-label{position: absolute}
+.slide-img img{width: 100%}
+
+.slide-label{top: 25%; color: #FFF; width: 30%}
+.slide-title{font-size: 48px; margin: 0}
+.slide-description{font-size: 24px}
+.slide-sep{width: 25%; margin: 20px 0; height: 1px; background: #FFF;}
+
+.slide-link{color: #FFF; background: url("../images/layout/link-arrow.png") right center no-repeat; padding-right: 16px; font-size: 18.5px}
+#home-slide-1 .slide-img{width: 42.46031746031746%; bottom: 0; left: 30%}
