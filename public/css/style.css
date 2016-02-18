@@ -71,17 +71,19 @@ a{text-decoration: none;}
 
 /* === NEWS SLIDER === */
 #home-news{background: #f3f6f7; margin-top: 20px}
-#home-news-inner{padding: 30px 90px; }
+#home-news .wrapper{padding: 30px 90px;}
+#home-news-inner{position: relative;}
 #home-news h1{font-size: 45px; color: #a3bcc4}
 #home-news h2{font-size: 24px; color: #a3bcc4}
-#news-slider{position: relative; margin-right: -10px}
+#news-slider{margin-right: -10px}
 .news-item a{color: #747577; font-size: 12px}
 .news-item{float:left; margin-right: 10px; width: 32%}
 .news-image img{width: 100%}
 .news-details{margin-bottom: 15px; font-size: 14px;}
 .news-description{margin-bottom: 15px; color: #2a3137}
 .slide-button{position: absolute; top: 50%; margin-top: -10px}
-.slider-pagination{text-align: center; margin-top: 50px}
+
+.slider-pagination{text-align: center;margin-top: 50px}
 .slider-pagination a{display: inline-block; margin: 0 25px; color: #4d72ae; opacity: 0.5; font-size: 18px}
 .slider-pagination a.selected{opacity: 1}
 
@@ -90,23 +92,33 @@ a{text-decoration: none;}
 
 
 /* === PRODUCTS SLIDER=== */
+
 #home-products{padding: 30px 90px;}
 #home-products-inner{position: relative;}
 #product-items{position: relative}
 #product-slider{margin-right: -10px}
+#home-products h1{font-size: 45px; color: #a3bcc4}
+
 .product-item{float: left; width: 25%}
 .product-item img{width: 100%; display: block}
 .product{position: relative;margin-right: 10px; margin-bottom: 10px}
-.product-label{position: absolute;  background: rgba(163, 188, 196, 0.84); top: 0; left: 0; right: 0; bottom: 0; text-align: center; display: none}
+.product-label{position: absolute;   background: rgba(163, 188, 196, 0.84); top: 0; left: 0; right: 0; bottom: 0; text-align: center; display: none}
 .product:hover .product-label{display: block}
+.product-label span{display: inline-block; width: 100%}
 .product-label:after{content: " "; display: inline-block; height: 100%; vertical-align: middle}
 .label-inner{display: inline-block; vertical-align: middle; color: #FFF}
-.label-inner h3{font-size: 34px; margin: 0}
-.label-inner p{font-size: 15px; margin: 0}
+.product-tile{font-size: 34px;}
+.product-description{font-size: 15px;}
+
+/* === PRODUCTS SLIDER=== */
 
 
-
-
+#footer{background: #24272a; font-size: 14px; margin-top: 20px}
+#foot-wrapper{background:  url("../images/layout/foot-logo.png") left top  no-repeat; padding: 0 90px}
+#contact{float: right; clear: both; margin: 50px 0}
+#contact h3{font-size: 24px}
+#contact span{display: block; margin-top: 20px; color: #FFF}
+#copyright{margin-bottom: 20px; font-size: 10px}
 
 
 

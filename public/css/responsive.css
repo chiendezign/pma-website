@@ -1,16 +1,39 @@
 @media screen and (max-width: 1280px) {
     .slide-title{font-size: 3.6vw}
+
     .slide-description{font-size: 1.8vw}
     .slide-link{font-size: 1.7vw}
+    .product{margin-right: 0.7vw; margin-bottom: 0.7vw}
 }
 
 @media screen and (max-width: 960px) {
+    #header{height: auto}
+    #logo{width: 25%}
+    #logo img{width: 100%}
+    #top-nav li{margin-left: 3.5vw}
+    #top-nav ul{margin-top: 3vw}
     #below-links{margin: 0}
+    #home-social{margin-left: 50px}
+
     .below-item{width: 47%; margin-left: 2%; margin-bottom: 20px}
+    #home-news .wrapper,#home-products {padding: 30px 50px; }
+    .product{margin-right: 1.5vw; margin-bottom: 1.5vw}
 
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
+    #logo{width: 100%; text-align: center; margin: 30px 0; clear: both}
+    #logo img{width: 40%}
     #below-links{padding: 0}
-    .below-item{width: 100%; margin-left: 0}
+    #top-nav li:first-child{margin: 0;}
+    #top-nav li{float: none; display: inline-block}
+    #top-nav{text-align: center; margin: 20px 5px; float: none}
+    #top-nav li a{font-size: 4.5vw}
+    #header{padding: 0; height: auto}
+}
+@media screen and (max-width: 480px) {
+    #logo img{width: 60%}
+    .below-item{width: auto; margin: 20px}
+    #home-social{margin-left: 20px}
+    #home-social a {margin-left: 10px;}
+    .slider-pagination{display: none !important;}
 }
