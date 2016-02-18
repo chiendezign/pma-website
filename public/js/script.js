@@ -1,8 +1,9 @@
 /**
  * Created by Nhokchien on 2/16/2016.
  */
+var is_safari = navigator.userAgent.indexOf("Safari") > -1;
 
-$(window).load(function() {
+function createSliders(){
     $('#news-items').carouFredSel({
         responsive: true,
         prev: '#news-prev',
@@ -37,4 +38,12 @@ $(window).load(function() {
         },
         pagination:'#product-pagination'
     })
+}
+
+$(document).ready(function(){
+    if(!is_safari)  createSliders();
+});
+
+$(window).load(function() {
+    if(is_safari) createSliders();
 });
