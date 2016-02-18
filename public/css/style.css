@@ -62,7 +62,16 @@ h1, h2, h3, h4, h5, h6{line-height: normal}
 .below-item{width: 24%; margin-right: 1%; float: left}
 .below-icon{height: 80px; text-align: center;white-space: nowrap;}
 .below-icon span{height: 100%; display: inline-block;  vertical-align: middle;}
-.below-icon img{vertical-align: middle;}
+
+
+.below-icon img{ vertical-align: middle; transition: all .5s ease;}
+.rotate:hover img{transform: rotate(-1000deg);}
+.rotate-right:hover img{transform: scale(1.1) rotate(10deg);}
+.rotate-left:hover img{transform: scale(1.1) rotate(-10deg);}
+.scale img{height: 26px; width: 62px;}
+.scale:hover img{ height: 26px; width: 50px;}
+
+
 .below-title{font-size: 19px; color: #a3bcc4; text-align: center; margin-bottom: 20px}
 .below-item a{font-size: 12px; color: #5376b1; line-height: 40px}
 
