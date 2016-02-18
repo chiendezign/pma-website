@@ -18,7 +18,7 @@ b, strong, h1, h2, h3, h4, h5, h6{font-weight: normal}
 
 body{font-family: "Azo Sans Lt", sans-serif; color: #747577; font-size: 13px; font-weight: normal; margin: 0;}
 a{text-decoration: none;}
-.wrapper{max-width: 1280px; width: 100%; box-sizing: border-box; padding: 0 10px; margin: 0 auto; overflow: hidden;}
+.wrapper{max-width: 1264px; width: 100%; box-sizing: border-box; padding: 0 2px; margin: 0 auto; overflow: hidden;}
 .clearfix:after, .clearfix::before {content: ""; display: table;}
 .clearfix:after {clear: both;}
 
@@ -51,7 +51,7 @@ a{text-decoration: none;}
 #home-slide-1 .slide-label{right:10%}
 
 
-/* === BELOW LINKS=== */
+/* === BELOW LINKS === */
 
 #below-links{margin: 0 64px; padding: 30px; border-bottom: 1px solid #f3f6f7}
 .below-item{width: 24%; margin-right: 1%; float: left}
@@ -62,21 +62,47 @@ a{text-decoration: none;}
 .below-item a{font-size: 12px; color: #5376b1; line-height: 40px}
 
 
-/* === HOME SOCIAL=== */
+/* === HOME SOCIAL === */
 
 #home-social{clear: both; margin-top: 30px; margin-left: 90px; font-size: 14px; line-height: 22px}
 #home-social div{float: left; margin-right: 10px}
 #home-social a{display: inline-block; margin-left: 30px}
 
 
+/* === NEWS SLIDER === */
+#home-news{background: #f3f6f7; margin-top: 20px}
+#home-news-inner{padding: 30px 90px; }
+#home-news h1{font-size: 45px; color: #a3bcc4}
+#home-news h2{font-size: 24px; color: #a3bcc4}
+#news-slider{position: relative; margin-right: -10px}
+.news-item a{color: #747577; font-size: 12px}
+.news-item{float:left; margin-right: 10px; width: 32%}
+.news-image img{width: 100%}
+.news-details{margin-bottom: 15px; font-size: 14px;}
+.news-description{margin-bottom: 15px; color: #2a3137}
+.slide-button{position: absolute; top: 50%; margin-top: -10px}
+.slider-pagination{text-align: center; margin-top: 50px}
+.slider-pagination a{display: inline-block; margin: 0 25px; color: #4d72ae; opacity: 0.5; font-size: 18px}
+.slider-pagination a.selected{opacity: 1}
+
+.prev-icon {left: -40px}
+.next-icon {right: -40px}
 
 
-
-
-
-
-
-
+/* === PRODUCTS SLIDER=== */
+#home-products{padding: 30px 90px;}
+#home-products-inner{position: relative;}
+#product-items{position: relative}
+#product-slider{margin-right: -10px}
+.product-item{float: left; width: 25%}
+.product-item img{width: 100%; display: block}
+.product{position: relative;margin-right: 10px; margin-bottom: 10px}
+.product-label{position: absolute;  background: rgba(163, 188, 196, 0.84); top: 0; left: 0; right: 0; bottom: 0; text-align: center; display: none}
+.product:hover .product-label{display: block}
+.product-label:after{content: " "; display: inline-block; height: 100%; vertical-align: middle}
+.label-inner{display: inline-block; vertical-align: middle; color: #FFF}
+.label-inner h3{font-size: 34px; margin: 0}
+.label-inner p{font-size: 15px; margin: 0}
 
 
 
