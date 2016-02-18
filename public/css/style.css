@@ -6,21 +6,26 @@
 @font-face {font-family: "Azo Sans Lt"; src: url(../fonts/AzoSans-Light.otf);}
 @font-face {font-family: "Azo Sans Tn";src: url(../fonts/AzoSans-Thin.otf);}
 
-b, strong, h1, h2, h3, h4, h5, h6{font-weight: normal}
 
+
+
+/* === GENERAL === */
+
+body{font-family: "Azo Sans Lt", sans-serif; line-height: 1.6em; color: #747577; font-size: 13px; font-weight: normal; margin: 0;}
+a{text-decoration: none;}
+
+b, strong, h1, h2, h3, h4, h5, h6{font-weight: normal}
+h1, h2, h3, h4, h5, h6{line-height: normal}
 .regular{font-family: "Azo Sans",sans-serif}
 .bold, strong{font-family: "Azo Sans Bk", sans-serif}
 .medium, b{font-family: "Azo Sans Md", sans-serif}
 .thin{font-family: "Azo Sans Tn", sans-serif}
 
-
-/* === GENERAL === */
-
-body{font-family: "Azo Sans Lt", sans-serif; color: #747577; font-size: 13px; font-weight: normal; margin: 0;}
-a{text-decoration: none;}
 .wrapper{max-width: 1264px; width: 100%; box-sizing: border-box; padding: 0 2px; margin: 0 auto; overflow: hidden;}
 .clearfix:after, .clearfix::before {content: ""; display: table;}
 .clearfix:after {clear: both;}
+
+
 
 
 /* === HEADER === */
@@ -35,7 +40,7 @@ a{text-decoration: none;}
 
 /* === HOME SLIDER=== */
 
-.slide-item{position: relative; overflow: hidden}
+.slide-item{position: relative; overflow: hidden; line-height: normal}
 .slide-bg img{width: 100%}
 .slide-img,.slide-label{position: absolute}
 .slide-img img{width: 100%}
@@ -110,10 +115,44 @@ a{text-decoration: none;}
 .product-tile{font-size: 34px;}
 .product-description{font-size: 15px;}
 
-/* === PRODUCTS SLIDER=== */
 
 
-#footer{background: #24272a; font-size: 14px; margin-top: 20px}
+/* === NEWS PAGE=== */
+
+#news-page{background: #f9fafb; padding-bottom: 150px}
+#news-page h1{color: #a3bcc4; font-size: 36px}
+
+#news-page .wrapper{padding: 0 10px;}
+#news-page-inner{ padding-right: 100px; margin-right:300px; margin-top: 30px; position: relative; border-right: 1px solid #DDD;}
+#news-page-content{max-width: 535px; float: right; width: 100%; margin-bottom: 50px}
+.news-page-item{margin-bottom: 80px}
+
+.news-page-social{clear: both; margin: 30px 0; font-size: 14px; line-height: 22px;}
+.news-page-social div{float: left;}
+.news-page-social a{display: inline-block; margin-left: 30px}
+
+.news-page-slide-wrapper img{width: 100%}
+.news-page-slider{position: relative}
+
+.news-page-slider .prev-icon {left: 20px}
+.news-page-slider .next-icon {right: 20px}
+
+#news-pagination{display: block !important;}
+#news-page-sidebar{position: absolute; left: 100%; top: 50px; padding-left: 100px; width: 200px}
+#news-page-sidebar ul{list-style: none; margin: 0; padding: 0}
+#news-page-sidebar li a{line-height: 25px; font-size: 14px; font-style: italic; color: #333}
+#news-page-sidebar h2{color: #333; font-size: 24px}
+
+#search-form{position: relative; margin-right: 43px; border: 2px solid #FFF}
+#search-text{width: 100%; height: 43px; border: none; background: none; padding: 0 10px}
+#search-submit{position: absolute; top: 0; left: 100%; width: 43px; height: 43px; border: none; background: url("../images/layout/search-icon.png")}
+
+
+
+
+/* === FOOTER=== */
+
+#footer{background: #24272a; font-size: 14px;}
 #foot-wrapper{background:  url("../images/layout/foot-logo.png") left top  no-repeat; padding: 0 90px}
 #contact{float: right; clear: both; margin: 50px 0}
 #contact h3{font-size: 24px}
