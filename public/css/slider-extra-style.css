@@ -1,0 +1,21 @@
+#home-slide-1 .slide-img{width: 42.46031746031746%; bottom: 0; left: 30%}
+#home-slide-1 .slide-label{right:10%}
+
+#home-slide-2 .slide-img{width: 123.4%; bottom: 0; right: -24%;transition: all .5s ease;}
+#home-slide-2.old .slide-img{right: 0;}
+#home-slide-2 .slide-label{left:10%;transition: all .5s ease;}
+#home-slide-2.old .slide-label{left:-20%;}
+
+#home-slide-3 .slide-img{width: 81.7%; bottom: 0; left: 0}
+#home-slide-3 .slide-label{right:0%}
+
+#home-slide-4 .slide-img{width: 140.99%; bottom: 0; left: -20%; }
+#home-slide-4.current .slide-img{left: -52%;transition: all 1s ease;}
+#home-slide-4 .slide-label{right:0%}
+
+#home-slide-5 .slide-img{width: 100%; bottom: 0; left: 0}
+#home-slide-5 .slide-label{left:10%}
+
+#home-prev.prev-icon {left: 10%; top: 80%}
+#home-next.next-icon {right: 10%; top: 80%}
+

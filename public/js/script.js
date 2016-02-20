@@ -31,9 +31,8 @@ function createSliders(){
                 data.items.old.addClass('old');
             },
             onAfter:function(data){
-                data.items.old.removeClass('current');
+                $('.current').removeClass('current');
                 data.items.visible.addClass('current');
-
             }
 
         }
@@ -50,13 +49,20 @@ function createSliders(){
             easing:'easeOutExpo',
             duration: 1000,
             items: newsScroll,
-            pauseOnHover:true
+            pauseOnHover:true,
+            onBefore:function(){
+                $('#news-prev, #news-next')
+                    .css('top',$('.news-image:first')
+                    .height()/2 + 74);
+            }
         },
         pagination:'#new-pagination',
         onCreate: function(){
             setTimeout(function(){
-                $('#news-prev, #news-next').css('top',$('.news-image:first').height()/2 + 74);
-            },100);
+                $('#news-prev, #news-next')
+                    .css('top',$('.news-image:first')
+                    .height()/2 + 74);
+            },500);
         }
 
     });
@@ -112,19 +118,14 @@ $(document).ready(function(){
                 newsScroll   = 1;
                 productItems = 1;
             }
+
             $('#news-items').trigger('configuration',{
-                items : {
-                    visible: newsItems
-                },
-                scroll:{
-                    items: newsScroll
-                },
+                items : {visible: newsItems},
+                scroll: {items: newsScroll},
                 reInit: true
             });
             $('#product-items').trigger('configuration',{
-                items : {
-                    visible: productItems
-                },
+                items : {visible: productItems},
                 reInit: true
             });
             $('.news-page-slide-wrapper, #slide-items').trigger('configuration',{
@@ -137,7 +138,9 @@ $(document).ready(function(){
 
 $(window).load(function() {
     if(is_safari) createSliders();
-    $('#news-items,#product-items,.news-page-slide-wrapper,#slide-items').trigger('configuration',{
-        reInit: true
-    });
+    setTimeout(function() {
+        $('#news-items,#product-items,.news-page-slide-wrapper,#slide-items').trigger('configuration', {
+            reInit: true
+        });
+    },300);
 });

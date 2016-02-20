@@ -37,6 +37,9 @@ h1, h2, h3, h4, h5, h6{line-height: normal}
 #top-nav li{float: left; list-style: none; margin-left: 48px;}
 #top-nav li a{font-size: 19px; color: #a3bcc4}
 #top-nav li a:hover{color: #4d72ae}
+#top-nav li a.active{font-family: "Azo Sans Md", sans-serif}
+
+
 
 /* === HOME SLIDER=== */
 
@@ -54,27 +57,6 @@ h1, h2, h3, h4, h5, h6{line-height: normal}
 
 .slide-link{color: #FFF; background: url("../images/layout/link-arrow.png") right center no-repeat; padding-right: 16px; font-size: 19px}
 
-#home-slide-1 .slide-img{width: 42.46031746031746%; bottom: 0; left: 30%}
-#home-slide-1 .slide-label{right:10%}
-
-#home-slide-2 .slide-img{width: 123.4%; bottom: 0; right: -24%;transition: all .5s ease;}
-#home-slide-2.old .slide-img{right: 0;}
-#home-slide-2 .slide-label{left:10%;transition: all .5s ease;}
-#home-slide-2.old .slide-label{left:-20%;}
-
-#home-slide-3 .slide-img{width: 81.7%; bottom: 0; left: 0}
-#home-slide-3 .slide-label{right:0%}
-
-#home-slide-4 .slide-img{width: 140.99%; bottom: 0; left: -20%; }
-#home-slide-4.current .slide-img{left: -52%;transition: all 1s ease;}
-#home-slide-4 .slide-label{right:0%}
-
-#home-slide-5 .slide-img{width: 100%; bottom: 0; left: 0}
-#home-slide-5 .slide-label{left:10%}
-
-#home-prev.prev-icon {left: 10%; top: 80%}
-#home-next.next-icon {right: 10%; top: 80%}
-
 /* === BELOW LINKS === */
 
 #below-links{margin: 0 64px; padding: 30px; border-bottom: 1px solid #f3f6f7}
@@ -82,16 +64,33 @@ h1, h2, h3, h4, h5, h6{line-height: normal}
 .below-icon{height: 80px; text-align: center;white-space: nowrap;}
 .below-icon span{height: 100%; display: inline-block;  vertical-align: middle;}
 
-.below-icon img{ vertical-align: middle; transition: all .5s ease;}
-.rotate:hover img{transform: rotate(-1000deg);}
-.rotate-right:hover img{transform: scale(1.1) rotate(10deg);}
-.rotate-left:hover img{transform: scale(1.1) rotate(-10deg);}
-.scale img{height: 26px; width: 62px;}
-.scale:hover img{ height: 26px; width: 50px;}
+.below-icon img{ vertical-align: middle;}
+.rotate:hover img{animation: spin 0.5s linear infinite}
+.rotate-right:hover img{animation: swing 0.5s alternate infinite;}
+.rotate-left:hover img{animation: zoom 0.5s alternate infinite;}
+
+.scale:hover img{animation: scale 0.5s alternate infinite;}
 
 
 .below-title{font-size: 19px; color: #a3bcc4; text-align: center; margin-bottom: 20px}
 .below-item a{font-size: 12px; color: #5376b1; line-height: 40px}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@keyframes scale {
+    from   {height: 26px; width: 62px;}
+    to { height: 26px; width: 50px;}
+}
+@keyframes swing {
+    from{transform: scale(0.9) rotate(0deg)}
+    to{transform: scale(1.2) rotate(-10deg)}
+}
+@keyframes zoom {
+    from{transform: rotate(20deg);}
+    to{transform: rotate(-10deg);}
+}
 
 
 /* === HOME SOCIAL === */
@@ -137,20 +136,20 @@ h1, h2, h3, h4, h5, h6{line-height: normal}
 .product-label{position: absolute;   background: rgba(163, 188, 196, 0.84); top: 0; left: 0; right: 0; bottom: 0; text-align: center; display: none}
 .product:hover .product-label{display: block}
 .product-label span{display: inline-block; width: 100%}
-.product-label:after{content: " "; display: inline-block; height: 100%; vertical-align: middle}
+.product-label span.helper{content: " "; display: inline-block; height: 100%; vertical-align: middle; width: 0}
 .label-inner{display: inline-block; vertical-align: middle; color: #FFF}
 .product-tile{font-size: 34px;}
 .product-description{font-size: 15px;}
 
 
 
-/* === NEWS PAGE=== */
+
 
 #news-page{background: #f9fafb; padding-bottom: 150px}
 #news-page h1{color: #a3bcc4; font-size: 36px}
 
 #news-page .wrapper{padding: 0 10px;}
-#news-page-inner{ padding-right: 100px; margin-right:400px; margin-top: 30px; position: relative; border-right: 1px solid #DDD;}
+#news-page-inner{ padding-right: 115px; margin-right:400px; margin-top: 30px; position: relative; border-right: 1px solid #DDD;}
 #news-page-content{max-width: 535px; float: right; width: 100%; margin-bottom: 50px}
 .news-page-item{margin-bottom: 80px}
 
@@ -165,7 +164,7 @@ h1, h2, h3, h4, h5, h6{line-height: normal}
 .news-page-slider .next-icon {right: 20px}
 
 #news-pagination{display: block !important;}
-#news-page-sidebar{position: absolute; left: 100%; top: 50px; padding-left: 100px; width: 300px}
+#news-page-sidebar{position: absolute; left: 100%; top: 50px; padding-left: 110px; width: 300px}
 #news-page-sidebar ul{list-style: none; margin: 0; padding: 0}
 #news-page-sidebar li a{line-height: 25px; font-size: 14px; font-style: italic; color: #333}
 #news-page-sidebar h2{color: #333; font-size: 24px}
